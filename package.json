@@ -1,0 +1,31 @@
+{
+  "name": "wikitext-parser",
+  "version": "0.0.1",
+  "description": "wikitext parser",
+  "main": "./out/index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "build": "tsc",
+    "test": "npx mocha --require ts-node/register src/test/test.ts",
+    "compile": "npm run build && npm run test"
+  },
+  "keywords": [
+    "wikitext",
+    "parser"
+  ],
+  "author": "Vi-brance",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.9",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "chai": "^4.3.8",
+    "eslint": "^8.48.0",
+    "mocha": "^10.2.0",
+    "ts-node-register": "^1.0.0",
+    "typescript": "^5.2.2",
+    "xstate": "^4.38.2"
+  }
+}
