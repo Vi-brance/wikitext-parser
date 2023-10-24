@@ -1,20 +1,36 @@
 {
   "name": "wikitext-parser",
   "version": "0.0.1",
-  "description": "wikitext parser",
-  "main": "./out/index.js",
-  "scripts": {
-    "lint": "eslint ./src",
-    "build": "tsc",
-    "test": "npx mocha --require ts-node/register src/test/test.ts",
-    "compile": "npm run build && npm run test"
-  },
+  "description": "A wikitext parser used for wikitext lsp.",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "wikitext",
     "parser"
   ],
+  "scripts": {
+    "lint": "eslint ./src",
+    "dev": "tsc --project tsconfig.dev.json",
+    "build": "tsc --project tsconfig.prod.json",
+    "test": "npx mocha --require ts-node/register src/test/test.ts",
+    "clean": "del /S /Q lib",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
   "author": "Vi-brance",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vi-brance/wikitext-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vi-brance/wikitext-parser/issues"
+  },
+  "homepage": "https://github.com/vi-brance/wikitext-parser#README",
   "devDependencies": {
     "@types/chai": "^4.3.6",
     "@types/mocha": "^10.0.1",
@@ -25,7 +41,6 @@
     "eslint": "^8.48.0",
     "mocha": "^10.2.0",
     "ts-node-register": "^1.0.0",
-    "typescript": "^5.2.2",
-    "xstate": "^4.38.2"
+    "typescript": "^5.2.2"
   }
 }
