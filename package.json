@@ -25,12 +25,12 @@
   "author": "Vi-brance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vi-brance/wikitext-parser.git"
+    "url": "https://github.com/Vi-brance/wikitext-parser.git"
   },
   "bugs": {
-    "url": "https://github.com/vi-brance/wikitext-parser/issues"
+    "url": "https://github.com/Vi-brance/wikitext-parser/issues"
   },
-  "homepage": "https://github.com/vi-brance/wikitext-parser#README",
+  "homepage": "https://github.com/Vi-brance/wikitext-parser#README",
   "devDependencies": {
     "@types/chai": "^4.3.6",
     "@types/mocha": "^10.0.1",
