@@ -20,7 +20,8 @@
     "build": "tsc --project tsconfig.prod.json",
     "test": "npx mocha --require ts-node/register src/test/test.ts",
     "clean": "del /S /Q lib",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "publish": "npm publish"
   },
   "author": "Vi-brance",
   "repository": {
@@ -32,13 +33,13 @@
   },
   "homepage": "https://github.com/Vi-brance/wikitext-parser#README",
   "devDependencies": {
-    "@types/chai": "^4.3.6",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^20.5.9",
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
-    "chai": "^4.3.8",
-    "eslint": "^8.48.0",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^18.18.2",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "chai": "^4.3.10",
+    "eslint": "^8.50.0",
     "mocha": "^10.2.0",
     "ts-node-register": "^1.0.0",
     "typescript": "^5.2.2"
