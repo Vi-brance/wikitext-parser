@@ -2,9 +2,8 @@
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ESNext",
-    "outDir": "out",
+    "outDir": "lib",
     "lib": ["ESNext"],
-    "sourceMap": true,
     "rootDir": "src",
     "forceConsistentCasingInFileNames": true
   },
